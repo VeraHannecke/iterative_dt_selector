@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "iterative-dt-selector"
+name = "iterative_dt_selector"
 version = "0.1.0"
 description = "Iterative decision tree with recursive feature discarding and path visualization"
 readme = "README.md"
@@ -28,8 +28,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/USERNAME/REPO_NAME"
-Issues = "https://github.com/USERNAME/REPO_NAME/issues"
+Homepage = "https://github.com/VeraHannecke/iterative_dt_selector"
+Issues = "https://github.com/VeraHannecke/iterative_dt_selector/issues"
 
 [project.scripts]
 iterative_dt_selector = "iterative_dt_selector.cli:main"

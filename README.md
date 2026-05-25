@@ -21,6 +21,8 @@ If the package is not installed, run it directly from the source directory:
 python -m iterative_dt_selector.cli data.xlsx
 ```
 
+Exact prompt used for the FasterRisk comparison in the thesis:
+python -m iterative_dt_selector.cli neopredict_lung_oncoprint_simple.xlsx --output-dir output --importance-threshold 0.3
 
 Data format
 
