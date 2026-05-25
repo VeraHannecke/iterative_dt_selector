@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iterative-dt-selector"
+version = "0.1.0"
+description = "Iterative decision tree with recursive feature discarding and path visualization"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+    {name = "Vera Hannecke", email = "vera.hannecke@web.de"},
+]
+keywords = ["genomics", "feature-selection", "decision-tree", "mutation", "bioinformatics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "pandas>=1.5.2",
+    "numpy>=1.26.4",
+    "scikit-learn>=1.2.0",
+    "altair>=6.0.0",
+    "openpyxl>=3.1.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/USERNAME/REPO_NAME"
+Issues = "https://github.com/USERNAME/REPO_NAME/issues"
+
+[project.scripts]
+iterative_dt_selector = "iterative_dt_selector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["iterative_dt_selector*"]
